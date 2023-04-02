@@ -20,11 +20,8 @@ public class HandlingMultipleElements {
 		
 		// 1.First get all the link in a list
 		List<WebElement> allGoogleLinks = driver.findElements(By.tagName("a"));
-
-//		  driver.findElements(By.xpath("a")); 
-//		  driver.findElements(By.cssSelector("a"));
-//		  driver.findElements(By.xpath("//a[@href]"));
-//		  
+		
+	  
 		 // 2. In a for loop print one by one link visible text and href attribute value
 		for(WebElement oneLink:allGoogleLinks ) {
 			System.out.println(oneLink.getText()+" - " + oneLink.getAttribute("href"));
